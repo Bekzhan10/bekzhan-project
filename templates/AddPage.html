@@ -1,0 +1,8 @@
+{% block content %}
+<h1>{{title}}</h1>
+<form action="/addpage/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">SIUUUUUU</button>
+</form>
+{% endblock %}
